@@ -4,15 +4,14 @@ The windev cookbook is a library cookbook aimed at the provisioning of Windows d
 
 This example provisions a Windows 7 64x instance with some basic OS software (Ruby, git, SlikSVN, Python, Sublime Text and Process Explorer) in an effort to showcase the usage of the windev cookbook's elements.
 
-
-
 ##Requirements
 
  * [ChefDK](https://opscode-omnibus-packages.s3.amazonaws.com/windows/2008r2/x86_64/chefdk-0.7.0-1.msi)
  * Network connectivity (with full internet access)
 
 ##Usage
-Clone this repository
+
+Clone this repository.
 
 Either install the [ChefDK](https://opscode-omnibus-packages.s3.amazonaws.com/windows/2008r2/x86_64/chefdk-0.7.0-1.msi) beforehand or copy the installer in the software/ subdirectory. Use the version linked in this document.
 
