@@ -1,0 +1,5 @@
+{
+  "environment":{"PATH":"c:\\tools\\ruby\\bin;c:\\tools\\git\\bin;c:\\tools\\python;c:\\tools\\SublimeText;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0"
+  },
+  "run_list": [ "role[dev]","recipe[vm::gems]"]
+}

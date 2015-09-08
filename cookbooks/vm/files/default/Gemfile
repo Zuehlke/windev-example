@@ -1,0 +1,23 @@
+source 'http://rubygems.org'
+
+gem 'rake','~>10.0.1'
+gem 'graph','~>2.7.0'
+gem 'archive-tar-minitar','~>0.5.2'
+gem 'gaudi','~>0.2.0'
+gem 'patir','~>0.8.2'
+gem "erubis",'~>2.7.0'
+gem 'nokogiri','~>1.6.3'
+gem 'sinatra','~>1.4.5'
+gem 'faraday','~>0.9.0'
+gem 'rack','~>1.5.2'
+gem 'json','~>1.8.1'
+gem 'uuid','~>2.3.7'
+gem 'thin','~>1.6.3'
+gem 'rubyzip','~>1.1.6'
+gem 'activesupport', '~> 4.2.0'
+gem 'rutema',"2.0.0.pre2"
+gem 'colorize','~> 0.7.5'
+
+group :development do
+  gem 'mocha','~>0.14.0', require: false
+end

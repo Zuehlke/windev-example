@@ -1,0 +1,31 @@
+{
+  "default_attributes":{
+    "installer_packages": [
+      {"name":"Slik Subversion 1.9.1 (x64)",
+        "source":"https://sliksvn.com/pub/Slik-Subversion-1.9.1-x64.msi", "save_as":"Slik-Subversion-1.9.1-x64.msi",
+        "version":"1.9.1","options":"INSTALLLOCATION=\"c:\\tools\\SlikSvn\""
+      },
+      {"name":"Git",
+        "source":"https://github.com/git-for-windows/git/releases/download/v2.5.1.windows.1/Git-2.5.1-64-bit.exe", "save_as":"Git-2.5.1-64-bit.exe",
+        "version":"2.5.1","options":"/verysilent /dir=\"c:\\tools\\git\" /pathoption=\"BashOnly\" /components=\"icons,icons\\quicklaunch,ext,ext\\reg,ext\\reg\\shellhere\" /CRLFOption=\"CRLFAlways\""
+      },
+      {"name":"git-credential-winstore",
+        "source":"https://gitcredentialstore.codeplex.com/releases/view/103679", "save_as":"git-credential-winstore.exe",
+        "version":"1.0.0", "options":"-s c:\\tools\\git\\bin\\git.exe","type":"custom"
+      }
+      {"name":"Python",
+        "source":"https://www.python.org/ftp/python/2.7.10/python-2.7.10.msi", "save_as":"python-2.7.10.msi",
+        "version":"2.7.10", "options":"/qb TARGETDIR=c:\\tools\\python"
+      },
+    ],
+    "zip_packages": [
+      {"source":"http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203083%20x64%20Setup.exe", "save_as":"SublimeTextBuild3083.zip",
+        "version":"3.3083","unpack":"c:/tools/SublimeText"
+      },
+      {"source":"http://download.sysinternals.com/files/ProcessExplorer.zip", "save_as":"ProcessExplorer.zip",
+        "version":"16.05","unpack":"c:/tools/ProcessExplorer"
+      }
+    ]
+  },
+  "run_list": ["role[base]"]
+}
