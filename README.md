@@ -6,6 +6,7 @@ This example provisions a Windows 7 64x instance with some basic OS software (Ru
 
 ##Requirements
 
+ * Windows 7 64x
  * [ChefDK](https://opscode-omnibus-packages.s3.amazonaws.com/windows/2008r2/x86_64/chefdk-0.7.0-1.msi)
  * Network connectivity (with full internet access)
 
