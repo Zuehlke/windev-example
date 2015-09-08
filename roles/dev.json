@@ -15,7 +15,7 @@
       }
     ],
     "zip_packages": [
-      {"source":"http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203083%20x64%20Setup.exe", "save_as":"SublimeTextBuild3083.zip",
+      {"source":"http://c758482.r82.cf2.rackcdn.com/Sublime%20Text%20Build%203083%20x64.zip", "save_as":"SublimeTextBuild3083.zip",
         "version":"3.3083","unpack":"c:/tools/SublimeText"
       },
       {"source":"http://download.sysinternals.com/files/ProcessExplorer.zip", "save_as":"ProcessExplorer.zip",
