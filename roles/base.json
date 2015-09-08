@@ -5,13 +5,12 @@
       "remove":["TabletPCOC","FaxServicesClientPackage","Xps-Foundation-Xps-Viewer","Printing-XPSServices-Features"]
     },
     "installer_packages": [
-      
-      {"name":"Ruby 2.1.5-p273",
-        "source":"ftp://vagrant:vagrant@10.48.17.2/homes/vagrant/software/rubyinstaller-2.1.5.exe", "save_as":"rubyinstaller-2.1.5.exe",
-        "version":"2.1.5-p273","options":"/verysilent /dir=\"c:\\tools\\ruby\" /tasks=\"addtk\""
+      {"name":"Ruby 2.1.7-p273",
+        "source":"http://dl.bintray.com/oneclick/rubyinstaller/rubyinstaller-2.1.7.exe", "save_as":"rubyinstaller-2.1.7.exe",
+        "version":"2.1.7-p273","options":"/verysilent /dir=\"c:\\tools\\ruby\" /tasks=\"addtk\""
       },
       {"name":"Ruby DevKit",
-        "source":"ftp://vagrant:vagrant@10.48.17.2/homes/vagrant/software/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe",
+        "source":"http://dl.bintray.com/oneclick/rubyinstaller/DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe",
         "save_as":"DevKit-mingw64-32-4.7.2-20130224-1151-sfx.exe",
         "version":"4.7.2-20130224","type":"custom","options":"-o\"C:\\tools\\devkit\" -y"
       }
