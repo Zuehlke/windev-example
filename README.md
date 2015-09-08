@@ -23,13 +23,17 @@ chef.cmd dev.json
 
 ##Boilerplate and mechanics
 
-The windev cookbook is used as a library cookbook. The main cookbook in this example is called vm. Dependencies are pulled via berkshelf and the vm cookbook has a rudimentary gem installation recipe that leverages bundler.
+The windev cookbook is used as a library cookbook. The main cookbook in this example is called vm. Dependencies are pulled via berkshelf and are vendored, not installed globally.
+
+The vm cookbook has a rudimentary gem installation recipe for illustration purposes.
 
 Chef is used in chef-zero mode and the scripts/client.rb contains the necessary configuration. Also to make sure that nothing interferes with the process the environment is explicitly set in scripts/env.cm (in this example only PATH).
 
-scripts/chef-chek.cmd is a bit of dos batch code to check that chef is present and attempt to install if not. Minimizes the installation instructions to "copy the ChefDK installer to the software/ subrdirectory and run".
+scripts/chef-check.cmd is a bit of dos batch code to check that chef is present and attempt to install if not. Minimizes the installation instructions to "copy the ChefDK installer to the software/ subrdirectory and run".
 
 All of this makes wrapping the Chef invocation in dos batch code necessary, which is what chef.cmd does.
+
+The trick with SUBST (substituting a drive letter for the working path of the scripts) is useful when running said script as a provisioning step in a Vagrant configuration (where the network share is not otherwise accessible from DOS).
 
 ##The gems recipe
 
