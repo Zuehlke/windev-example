@@ -18,7 +18,7 @@ call chef-client -z --config scripts\client.rb -j %1
 goto done
 :no_params
 echo ERROR: Missing parameter
-goto done
+goto finish
 :error
 echo ERROR: Berkshelf failed
 :done
@@ -27,3 +27,4 @@ cd /D %~dp0
 subst L: /D
 set PATH=%OLD_PATH%
 echo Done
+:finish
