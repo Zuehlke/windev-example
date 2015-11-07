@@ -16,5 +16,5 @@
       }
     ]
   },
-  "run_list": ["role[env]","recipe[windev::features]","recipe[windev::packages]"]
+  "run_list": ["recipe[windev::features]","recipe[windev::packages]","role[env]"]
 }
