@@ -12,7 +12,7 @@ pushd "%CHEFDK_DIR%"
 
 echo ==^> Downloading ChefDK to %CHEFDK_INSTALLER%
 echo ==^> Downloading "%CHEFDK_URL%" to "%CHEFDK_INSTALLER%"
-powershell -Command "(New-Object System.Net.WebClient).DownloadFile(\"%CHEFDK_URL%\", \"%CHEFDK_INSTALLER%\")" <NUL
+powershell -Command "(New-Object System.Net.WebClient).DownloadFile('%CHEFDK_URL%', '%CHEFDK_INSTALLER%')" <NUL
 if not exist "%CHEFDK_INSTALLER%" goto error
 goto done
 :error
