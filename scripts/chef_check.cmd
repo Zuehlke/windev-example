@@ -8,7 +8,7 @@ cd /D %~dp0/..
 goto done
 :install
 echo Installing ChefDK
-set DEFAULT_CHEFDK_INSTALLER=software\chefdk-0.7.0-1.msi
+set DEFAULT_CHEFDK_INSTALLER=software\chefdk-0.19.6-1.msi
 cd /D %~dp0/..
 @if "%CHEFDK_INSTALLER%"=="" set CHEFDK_INSTALLER=%DEFAULT_CHEFDK_INSTALLER%
 @if not exist %CHEFDK_INSTALLER% call scripts\download_chefdk.cmd

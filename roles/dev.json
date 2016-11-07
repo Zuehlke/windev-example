@@ -1,9 +1,10 @@
 {
   "default_attributes":{
     "installer_packages": [
-      {"name":"Slik Subversion 1.9.1 (x64)",
-        "source":"https://sliksvn.com/pub/Slik-Subversion-1.9.1-x64.msi", "save_as":"Slik-Subversion-1.9.1-x64.msi",
-        "version":"1.9.1119","options":"INSTALLLOCATION=\"c:\\tools\\SlikSvn\""
+      {"name":"Slik Subversion 1.9.4 (x64)",
+        "source":"https://sliksvn.com/pub/Slik-Subversion-1.9.4-x64.zip","save_as":"Slik-Subversion-1.9.4-x64.zip",
+        "unpack":"Slik-Subversion-1.9.4-x64/","installer":"Slik-Subversion-1.9.4-x64/Slik-Subversion-1.9.4-x64.msi",
+        "version":"1.9.4139"
       },
       {"name":"Git version 2.5.1",
         "source":"https://github.com/git-for-windows/git/releases/download/v2.5.1.windows.1/Git-2.5.1-64-bit.exe", "save_as":"Git-2.5.1-64-bit.exe",

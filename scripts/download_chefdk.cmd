@@ -1,5 +1,5 @@
 @echo off
-set CHEFDK_VERSION=0.9.0
+set CHEFDK_VERSION=0.19.6
 set CHEFDK_URL=https://www.getchef.com/chef/download-chefdk?p=windows^&pv=2008r2^&m=x86_64^&v=%CHEFDK_VERSION%
 
 set CHEFDK_MSI=chefdk-windows-%CHEFDK_VERSION%.msi
