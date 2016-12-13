@@ -3,6 +3,8 @@ if "%1"=="" goto no_params
 echo Updating with configuration %1
 echo Setting environment
 set OLD_PATH=%PATH%
+set CHEF_SCRIPT=%~dp0chef.cmd
+set CHEF_CONFIG="%1"
 call scripts\env.cmd
 call scripts\chef_check.cmd
 subst L: %~dp0.
